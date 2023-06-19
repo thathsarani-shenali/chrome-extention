@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="text-center title">Leads<span>Tracker</span></h1>
+            <div id="home-screen" class="text-center">
+                <p>You haven't saved any URLs yet. Add your first URL here.</p>
+                <img src="img/welcome-screen-image.png" class="w-50" alt="">
+                <br/>
+                <button id="get-started-btn" class="btn btn-primary">Get Started</button>
+            </div>
+            <div id="main-screen">
+                <input type="text" id="input-el" class="form-control my-3" placeholder="Enter your URL here">
+                <button id="input-btn" class="btn btn-primary">SAVE INPUT</button>
+                <button id="tab-btn" class="btn btn-primary">SAVE TAB</button>
+                <button id="delete-btn" class="btn btn-primary">DELETE ALL</button>
+                
+                <h4 class="pt-5">Saved URLs</h4>
+                <ul id="ul-el" class="list-group mb-3">
+                </ul>
+                <p id="empty-list-msg" class="text-muted">There are no URLs saved.</p>
+
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
