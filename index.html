@@ -14,16 +14,14 @@
             </div>
             <div id="main-screen">
                 <input type="text" id="input-el" class="form-control my-3" placeholder="Enter your URL here">
-                <button id="input-btn" class="btn btn-primary">SAVE INPUT</button>
+                <button id="input-btn" class="btn btn-primary" disabled>SAVE INPUT</button>
                 <button id="tab-btn" class="btn btn-primary">SAVE TAB</button>
-                <button id="delete-btn" class="btn btn-primary">DELETE ALL</button>
-                
+                <button id="delete-btn" class="btn btn-primary delete-btn">DELETE ALL</button>
                 <h4 class="pt-5">Saved URLs</h4>
-                <ul id="ul-el" class="list-group mb-3">
+                <ul id="saved-url-list" class="list-group mb-3">
                 </ul>
                 <p id="empty-list-msg" class="text-muted">There are no URLs saved.</p>
-
-            </div>
+            </div>            
         </div>
         <script src="index.js"></script>
     </body>

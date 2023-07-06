@@ -3,8 +3,11 @@ body {
     padding: 10px;
     font-family: 'Urbanist', sans-serif;
     min-width: 400px;
-}
 
+}
+.container{
+    max-width: inherit !important;
+}
 #main-screen{
     display: none;
 }
@@ -12,6 +15,7 @@ body {
 .title{
     color: #00344b;
     font-weight: 600;
+    padding-top: 5px;
 }
 
 .title span{
@@ -29,14 +33,12 @@ input {
 button {
     background: #00344b !important;
     color: white;
-    /* padding: 10px 20px; */
     border: 1px solid #00344b !important;
-    /* font-weight: bold; */
 }
 
-#delete-btn {
-    background: white !important;
-    color: #00344b !important;
+button:hover {
+    background: #1a7399 !important;
+    border: 1px solid #1a7399 !important;
 }
 
 ul {
@@ -49,8 +51,36 @@ li {
     margin-top: 5px;
 }
 
-a {
-    /* color: #5f9341; */
+.list-group-item{
+    border-radius: 5px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
 }
 
+.list-group-item:nth-child(even){
+    background-color: #ffecfb;
+}
+
+.list-group-item:nth-child(odd){
+    background-color:#e1f0ff;
+}
+
+
+.list-group-item .delete-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    line-height: 1;
+    background-color: #CC0062 !important;
+    border:1px solid #CC0062 !important;
+}
+
+.delete-btn:hover {
+    background-color: #ffffff !important;
+    border:1px solid #CC0062 !important;
+    color: #CC0062 !important;
+}
 
